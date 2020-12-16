@@ -1,0 +1,10 @@
+<h1><%= @recipe.name %></h1>
+<h2><%= @recipe.category %></h2>
+<% @recipe.amounts.each do |amount| %>
+<ul>
+  <li><%= amount.description %> <%= amount.ingredient.name %></li>
+</ul>
+<% end %>
+<div class="col-6">
+  <%= render '/amounts/form' %>
+</div>

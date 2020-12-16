@@ -1,0 +1,6 @@
+<%= simple_form_for [@recipe, @amount] do |f| %>
+  <%= f.association :ingredient, collection: Ingredient.order('name ASC') %>
+  <%= f.input :description %>
+  <%= f.hidden_field :recipe_id, value: @recipe.id %>
+  <%= f.button :submit, class: "btn btn-primary btn-lg w-100" %>
+<% end %>
