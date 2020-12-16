@@ -1,0 +1,51 @@
+.intro {
+  text-align: center;
+  .avatar-home {
+    display: block;
+    margin: auto;
+  }
+}
+
+.details {
+  margin-top: 80px;
+  height: 50vh;
+  text-align: center;
+  margin-left: auto;
+  background-color: #6E8898;
+  color: #ffffff;
+  .my-details {
+    padding-top: 10vh;
+  }
+  p {
+    margin: auto;
+    width: 440px;
+  }
+}
+
+.expertise {
+  height: 60vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 24px;
+  margin: -200px 24px -0 24px;
+  text-align: center;
+  .item {
+    background-color: #ffffff;
+    border: 1px #E6ECF8 solid;
+    border-radius: 16px;
+    border: 2px solid rgba($color: #EEF3F8, $alpha: 1);
+    padding: 0 16px;
+    h2 {
+      margin: 16px 0;
+    }
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+    .expertise-p {
+      color:  #6E8898;
+      font-weight: bold;
+    }
+  }
+}
